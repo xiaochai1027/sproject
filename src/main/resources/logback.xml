@@ -65,16 +65,16 @@
 
     </appender>
 
-    <root level="debug">
+    <root level="info">
     <!--<root level="OFF">-->
         <appender-ref ref="STDOUT"/>
         <appender-ref ref="SAVE-TO-FILE"/>
     </root>
 
-    <!--<logger name="com" additivity="false" level="debug">-->
-        <!--<appender-ref ref="STDOUT"/>-->
-        <!--<appender-ref ref="SAVE-TO-FILE"/>-->
-    <!--</logger>-->
+    <logger name="com.cfc" additivity="false" level="debug">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="SAVE-TO-FILE"/>
+    </logger>
 
     <!--<logger name="org.springframework.boot.SpringApplication" level="debug">-->
     <!--<appender-ref ref="STDOUT" />-->
