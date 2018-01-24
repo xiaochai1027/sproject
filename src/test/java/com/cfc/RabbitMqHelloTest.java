@@ -1,6 +1,7 @@
 package com.cfc;
 
 import com.cfc.dao.model.User;
+import com.cfc.service.rabbit.FanoutRabbitSender;
 import com.cfc.service.rabbit.HelloSender;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,6 +20,9 @@ public class RabbitMqHelloTest {
 
     @Autowired
     private HelloSender helloSender;
+    @Autowired
+    private FanoutRabbitSender fanoutRabbitSender;
+
 
     @Test
     public void hello() throws Exception {
@@ -46,6 +50,22 @@ public class RabbitMqHelloTest {
 
     }
 
+    /**
+     * 发布订阅模式，把队列绑定到交换机上，向交换机发送消息，交换机把消息发送到所有绑定到的队列上
+     * @throws Exception
+     */
+    @Test
+    public void Topic(){
+        fanoutRabbitSender.sendTopic();
+    }
+
+    /**
+     * 只想绑定到交换机上的A发送数据
+     */
+    @Test
+    public void fanoutA(){
+        fanoutRabbitSender.sendA();
+    }
 
 
 }
