@@ -1,5 +1,6 @@
 package com.cfc.service.rabbit;
 
+import com.cfc.dao.model.User;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -25,5 +26,11 @@ public class HelloSender {
         String context = "hello -["+ i+"]" + new Date();
         System.out.println("Sender : " + context);
         this.rabbitTemplate.convertAndSend("hello", context);
+    }
+
+    //发送者
+    public void send(User user) {
+        System.out.println("Sender object: " + user.toString());
+        rabbitTemplate.convertAndSend("object", user);
     }
 }
