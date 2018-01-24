@@ -1,4 +1,4 @@
-package com.cfc.model;
+package com.cfc.dao.model;
 
 /**
  * @auther fangchen.chai ON 2017/11/22

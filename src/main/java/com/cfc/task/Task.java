@@ -1,7 +1,7 @@
 package com.cfc.task;
 
-import com.cfc.mapper.CheckUuidMapper;
-import com.cfc.model.CheckUuid;
+import com.cfc.dao.mapper.CheckUuidMapper;
+import com.cfc.dao.model.CheckUuid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

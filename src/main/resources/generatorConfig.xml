@@ -14,7 +14,7 @@
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
                         connectionURL="jdbc:mysql://http://39.106.107.127/:3306/sproject?useUnicode=true&amp;characterEncoding=UTF-8"
                         userId="admin" password="admin"/>
-        <javaModelGenerator targetPackage="com.cfc.model.generated"
+        <javaModelGenerator targetPackage="com.cfc.dao.model.generated"
                             targetProject="D:\IDEA workspace\sproject\src\main\java"/>
         <sqlMapGenerator targetPackage="mapper.generated"
                          targetProject="D:\IDEA workspace\sproject\src\main\resources"/>

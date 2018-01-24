@@ -13,7 +13,7 @@ import org.springframework.web.SpringServletContainerInitializer;
  * @auther fangchen.chai ON 2017/11/20
  */
 @SpringBootApplication(scanBasePackages = "com.cfc")
-@MapperScan(basePackages = "com.cfc.mapper")
+@MapperScan(basePackages = "com.cfc.dao.mapper")
 @EnableScheduling
 public class App extends SpringBootServletInitializer {
 

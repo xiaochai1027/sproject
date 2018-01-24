@@ -1,6 +1,6 @@
-package com.cfc.mapper;
+package com.cfc.dao.mapper;
 
-import com.cfc.model.CheckUuid;
+import com.cfc.dao.model.CheckUuid;
 
 /**
  * @auther fangchen.chai ON 2017/11/22
