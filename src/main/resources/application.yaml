@@ -11,6 +11,16 @@ spring:
     port: 5672
     username: admin
     password: admin
+  redis:
+#   连接远程redis 需要改配置文件，把bind 127.0.0.1 注释 ，并把protected-mode 改为no
+    host: 39.106.107.127
+    port: 6379
+    database: 0
+    pool:
+      max-active: 10
+      max-idle: 10
+      max-wait: -1
+      min-idle: 0
 server:
   port: 8070
 
