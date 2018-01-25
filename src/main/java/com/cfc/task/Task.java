@@ -22,7 +22,7 @@ public class Task {
     @Autowired
     private CheckUuidMapper checkUuidMapper;
 
-//    @Scheduled(cron = "0/1 * * * * ?")
+    @Scheduled(cron = "0/1 * * * * ?")
     public void checkUuid(){
         CheckUuid checkUuid = new CheckUuid();
         checkUuid.setId(UUID.randomUUID().toString().replaceAll("-",""));
